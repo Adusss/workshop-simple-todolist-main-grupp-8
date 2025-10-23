@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="./js/script.js" defer></script>
     <title>Simple To-list</title>
-</head>
-<body>
-    <h1>Enkel TODO-list</h1>
-    
-    <form id="todoForm">
-        <input type="text" id="input" placeholder="Lägg till en ny uppgift..." required>
-        <button type="submit" id="addBtn">Lägg till</button>
-    </form>
+  </head>
+  <body>
+    <div class="todoform-holder">
+      <h1>Enkel TODO-list</h1>
 
-    <ul id="todos"></ul>
-</body>
+      <form class="todoform" id="todoForm">
+        <input class="todoform-input" type="text" id="input" placeholder="Lägg till en ny uppgift..." required />
+        <button class="btn-sumbit" type="submit" id="addBtn">Add task</button>
+      </form>
+
+      <ul class="todos-list" id="todos">
+        <!-- <div id="btn-remove"></div> -->
+      </ul>
+    </div>
+  </body>
 </html>

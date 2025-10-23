@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 60px;
+  color: #333;
+}
+
+.todoform-holder {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.todoform-holder h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.todoform {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.todoform-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.todoform-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn-sumbit {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-sumbit:hover {
+  background: #005fcc;
+}
+
+.todos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todos-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f2f5;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background 0.2s ease;
+}
+
+.todos-list li:hover {
+  background: #e9ecef;
+}
+
+.todos-list button {
+  background: #dc3545;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 7px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.todos-list button:hover {
+  background: #b02a37;
+}

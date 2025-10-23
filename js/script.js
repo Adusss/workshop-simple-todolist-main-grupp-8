@@ -1,64 +1,21 @@
-// 1. DOM referenser
 const todoList = document.getElementById("todos");
+const addTask = document.getElementById("input");
+const button = document.getElementById("addBtn");
 
+button.addEventListener("click", function () {
+  const task = addTask.value.trim();
+  if (task === "") return;
 
+  const li = document.createElement("li");
+  li.textContent = task;
 
-// 2. Eventlyssnare - När ett formulär submittas anropa funktion addTodo()
+  const removeBtn = document.createElement("button");
+  removeBtn.textContent = "X";
+  removeBtn.onclick = function () {
+    li.remove();
+  };
 
-
-
-
-
-// 3. Börja med en tom array på todos
-// samt ett id som börjar på noll
-
-
-
-
-
-// 4. Lägg till en Todo som ett objekt  i arrayen todos
-function addTodo() {
-
-    
-}
-
-
-
-// 5. Funktion som renderar listan på index.html varje gång listan förändraas
-function renderList() {
-
-    // Iterera genom varje list-element och skapa en <li></li> med todo-texten, samt en close-knapp
-
-}
-
-
-
-
-// BONUS! Uppdatera eller ta bort en Todo. Använd er av s.k event delegation
-todoList.addEventListener('click', function(event) {
-        // Element som klickades på i listan
-        console.log(event.target);
-
-        // Om man texten klickas => anropa toggleTodoCompletion
-
-        // Eller om close-knappen klickas => anrop deleteTOto
-
+  li.appendChild(removeBtn);
+  todoList.appendChild(li);
+  addTask.value = "";
 });
-
-
-// Bonus! Uppdatera en todo med visst id. Toggle "completed"
-function toggleTodoCompletion(id) {
-
-
-}
-
-
-
-// Bonus
-function deleteTodo(id) {
-  
-}
-
-
-
-
