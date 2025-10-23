@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #3c467b;
+  background-color: #71c9ce;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -11,7 +11,7 @@ body {
 }
 
 .todoform-holder {
-  background: #50589c;
+  background-color: #a6e3e9;
   padding: 20px 25px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -37,6 +37,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
+  background-color: #cbf1f5;
 }
 
 .todoform-input:focus {
@@ -46,16 +47,17 @@ body {
 
 .btn-sumbit {
   background: #007bff;
-  color: #fff;
+  color: black;
   border: none;
   border-radius: 6px;
   padding: 8px 12px;
   cursor: pointer;
   font-size: 14px;
+  background-color: #cbf1f5;
 }
 
 .btn-sumbit:hover {
-  background: #005fcc;
+  background: #71c9ce;
 }
 
 .todos-list {
@@ -73,10 +75,11 @@ body {
   border-radius: 6px;
   margin-bottom: 8px;
   transition: background 0.2s ease;
+  background-color: #cbf1f5;
 }
 
 .todos-list li:hover {
-  background: #e9ecef;
+  background: #e3fdfd;
 }
 
 .todos-list button {
