@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #eeeeee;
+  background-color: #3c467b;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -11,7 +11,7 @@ body {
 }
 
 .todoform-holder {
-  background: #fff;
+  background: #50589c;
   padding: 20px 25px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
