@@ -34,7 +34,7 @@ body {
 .todoform-input {
   flex: 1;
   padding: 8px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #71c9ce00;
   border-radius: 6px;
   font-size: 14px;
   background-color: #cbf1f5;
@@ -42,7 +42,7 @@ body {
 
 .todoform-input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #71c9ce;
 }
 
 .btn-sumbit {
@@ -54,6 +54,10 @@ body {
   cursor: pointer;
   font-size: 14px;
   background-color: #cbf1f5;
+}
+
+input {
+  outline: none;
 }
 
 .btn-sumbit:hover {
