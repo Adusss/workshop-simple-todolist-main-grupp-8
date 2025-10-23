@@ -9,6 +9,8 @@ button.addEventListener("click", function () {
   const li = document.createElement("li");
   li.textContent = task;
 
+  li.addEventListener("click", () => li.classList.toggle("done"));
+
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "X";
   removeBtn.onclick = function () {
